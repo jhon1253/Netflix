@@ -4,6 +4,7 @@ body {
   background-color: #000000;
 }
 
+
 .header {
   display: flex;
   background-color: #141414;
@@ -55,63 +56,11 @@ body {
   margin: 20px;
 }
 
-h3 {
-  color: #ffffff;
-  margin: 20px;
-  padding-left: 20px;
-}
-
-.imagenes {
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  width: 100%;
-  scrollbar-color: #000 #000;
-}
-
-.imagen {
-  height: 120px;
-  width: 200px;
-  margin-left: 5px;
-}
-
-@media (max-width: 568px) {
-  .barra.open {
-    right: 0;
-    top: 75px;
-  }
-  .barra {
-    height: 100%;
-    width: 250px;
-    background: #141414;
-    position: fixed;
-    top: 70px;
-    right: -250px;
-    z-index: 0;
-    transition: right 0.3s ease;
-  }
-  .galeria {
-    display: block;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .contenido {
-    padding: 0 10px; /* Reducir el espacio alrededor del contenido para pantallas pequeñas */
-  }
-  .header .container {
-    flex-direction: column; /* Apilar elementos del menú en pantallas pequeñas */
-    align-items: center; /* Centrar elementos del menú en pantallas pequeñas */
-  }
-  /* Puedes añadir más estilos específicos para pantallas pequeñas aquí */
-}
-
-
 
 .section {
   margin-bottom: 20px; /* Espacio entre secciones */
 }
+
 
 .imagenes {
   display: flex;
@@ -120,7 +69,25 @@ h3 {
 }
 
 .imagen {
-  height: 120px;
-  width: 200px;
-  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  width: 200px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  object-fit: cover; 
+}
+
+
+.titulo {
+  text-align: center; /* Centra el texto del título */
+  margin-top: 8px; /* Espacio imagen y el título */
+  font-size: 14px; 
+  color: #ffffff; 
+}
+
+/* Estilos del contenedor de cada película */
+.pelicula {
+  text-align: center; /* Centra  contenido  película */
+  margin-bottom: 20px; /*espacios*/
 }
