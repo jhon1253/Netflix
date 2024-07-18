@@ -5,6 +5,7 @@ body{
    
 }
 .header {
+    /*barra nav*/
     display: flex;
     background-color:#141414 ;
     justify-content: space-between;
@@ -44,6 +45,7 @@ body{
 }
 
 .barra a{
+    /*kids*/
     color: #ffffff;
     text-decoration: none;
     margin: 20px;
