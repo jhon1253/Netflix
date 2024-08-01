@@ -1,6 +1,6 @@
 const NotificationMessage = () => {
     return (
-      <div className="p-6 bg- max-w-sm mx-auto bg-yellow-500 rounded-xl shadow-lg flex items-center space-x-4 hover:animate-bounce ">
+      <div className="pt-9 pr-4 pl-8 pb-4 mt-16 mb-4 m-10 p-6 bg- max-w-sm mx-auto bg-yellow-500 rounded-xl shadow-lg flex items-center space-x-4 hover:animate-bounce ">
         <div class="shrink-0">
           <img
             className="size-12"
