@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800">  {/*color barra*/}
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -67,8 +67,8 @@ const Navbar = () => {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
                 <Link
-                  to="/"
-                  className="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                  to="/home"
+                  className="rounded-md  px-3 py-2 text-sm font-medium text-white"
                   aria-current="page"
                 >
                   HOME
@@ -141,6 +141,14 @@ const Navbar = () => {
                 aria-labelledby="user-menu-button"
                 tabIndex="-1"
               >
+               <Link
+                  to="#"
+                  className="block px-4 py-2 text-sm text-gray-700"
+                  role="menuitem"
+                  tabIndex="-1"
+                >
+                  HOME
+                </Link>
                 <Link
                   to="#"
                   className="block px-4 py-2 text-sm text-gray-700"
@@ -179,25 +187,25 @@ const Navbar = () => {
             className="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
             aria-current="page"
           >
-            Dashboard
+            HOME
           </Link>
           <Link
             to="/about"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Team
+            ABOUT
           </Link>
           <Link
             to="/categories"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Projects
+            CATEGORIES
           </Link>
           <Link
             to="/categoryproducts"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
           >
-            Calendar
+            CATEGORY-PRODUCTS
           </Link>
         </div>
       </div>

@@ -13,7 +13,7 @@ import Navbar from "./Componets/Navbar";
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
       <BrowserRouter>
       <Navbar />
         <Routes>
@@ -23,6 +23,7 @@ function App() {
           <Route path="/categoryproducts" element={<CategoryProducts />}
           ></Route>
         </Routes>
+        <NotificationMessage/>
       </BrowserRouter>
     </>
   );
