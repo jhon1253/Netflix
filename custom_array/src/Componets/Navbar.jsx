@@ -16,7 +16,7 @@ const Navbar = () => {
             {/*menu button */}
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isMobileMenuOpen}
               onClick={toggleMobileMenu}
@@ -67,7 +67,7 @@ const Navbar = () => {
               <div className="flex space-x-4">
                 <Link
                   to="/home"
-                  className="rounded-md  px-3 py-2 text-sm font-medium text-yellow-500  hover:bg-gray-700 hover:text-white"
+                  className="rounded-md  px-3 py-2 text-sm font-medium text-yellow-600  hover:bg-gray-700 hover:text-white"
                   aria-current="page"
                 >
                   HOME
