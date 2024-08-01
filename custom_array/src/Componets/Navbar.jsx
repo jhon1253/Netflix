@@ -9,13 +9,9 @@ const Navbar = () => {
   };
 
   return (
-<<<<<<< HEAD
     <nav className="bg-gray-700 p-8">
       {" "}
       {/*color barra*/}
-=======
-    <nav className="bg-gray-700 p-8">  {/*color barra*/}
->>>>>>> 5aa344ddcfd6c4e112b451d481fa58531daed88e
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -63,15 +59,7 @@ const Navbar = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-<<<<<<< HEAD
               <img className="h-8 w-auto" src="gokuu.png" alt="Your Company" />
-=======
-              <img
-                className="h-8 w-auto"
-                src="gokuu.png"
-                alt="Your Company"
-              />
->>>>>>> 5aa344ddcfd6c4e112b451d481fa58531daed88e
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
