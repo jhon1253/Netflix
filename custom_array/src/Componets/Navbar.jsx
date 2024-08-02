@@ -9,7 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-700 p-8">  {/*color barra*/}
+    <nav className="bg-gray-700 p-8">
+      {" "}
+      {/*color barra*/}
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -58,7 +60,7 @@ const Navbar = () => {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
               <img
-                className="h-8 w-auto"
+                className="h-11 w-auto hover:animate-bounce "
                 src="gokuu.png"
                 alt="Your Company"
               />
@@ -67,26 +69,26 @@ const Navbar = () => {
               <div className="flex space-x-4">
                 <Link
                   to="/home"
-                  className="rounded-md  px-3 py-2 text-sm font-medium text-yellow-600  hover:bg-gray-700 hover:text-white"
+                  className="rounded-md hover:animate-bounce px-3 py-2 text-sm font-medium hover:text-white text-green-500  hover:bg-yellow-400 "
                   aria-current="page"
                 >
                   HOME
                 </Link>
                 <Link
                   to="/about"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md hover:animate-bounce px-3 py-2 text-sm font-medium hover:text-white text-green-500 hover:bg-yellow-400 "
                 >
                   ABOUT
                 </Link>
                 <Link
                   to="/categories"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md hover:animate-bounce px-3 py-2 text-sm font-medium hover:text-white text-green-500 hover:bg-yellow-400 "
                 >
                   CATEGORIES
                 </Link>
                 <Link
                   to="/categoryproducts"
-                  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                  className="rounded-md hover:animate-bounce px-3 py-2 text-sm font-medium hover:text-white text-green-500 hover:bg-yellow-400"
                 >
                   CATEGORY-PRODUCTS
                 </Link>
@@ -138,7 +140,7 @@ const Navbar = () => {
                 aria-labelledby="user-menu-button"
                 tabIndex="-1"
               >
-               <Link
+                <Link
                   to="#"
                   className="block px-4 py-2 text-sm text-gray-700"
                   role="menuitem"
@@ -175,9 +177,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile menu */}
-      <div className={`sm:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
+      <div
+        className={`sm:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
+        id="mobile-menu"
+      >
         <div className="space-y-1 px-2 pb-3 pt-2">
           <Link
             to="/home"
