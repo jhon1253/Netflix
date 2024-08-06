@@ -61,7 +61,6 @@ export default function EditContact() {
       <p>
         <button type="submit">Save</button>
         <button
-          type="button"
           onClick={() => {
             navigate(-1);
           }}
