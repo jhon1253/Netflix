@@ -1,4 +1,11 @@
-import { Outlet, useLoaderData, Form, redirect, NavLink,useNavigation, } from "react-router-dom";
+import {
+  Outlet,
+  useLoaderData,
+  Form,
+  redirect,
+  NavLink,
+  useNavigation,
+} from "react-router-dom";
 import { getContacts, createContact } from "../contacts";
 
 export async function action() {
@@ -21,7 +28,7 @@ export default function Root() {
       <div id="sidebar">
         <h1>React Router Contacts</h1>
         <div>
-        <Form id="search-form" role="search">
+          <Form id="search-form" role="search">
             <input
               id="q"
               aria-label="Search contacts"
@@ -41,14 +48,11 @@ export default function Root() {
             {contacts.map((contact) => (
               <li key={contact.id}>
                 <NavLink
-                    to={`contacts/${contact.id}`}
-                    className={({ isActive, isPending }) =>
-                      isActive
-                        ? "active"
-                        : isPending
-                        ? "pending"
-                        : ""
-                    }>
+                  to={`contacts/${contact.id}`}
+                  className={({ isActive, isPending }) =>
+                    isActive ? "active" : isPending ? "pending" : ""
+                  }
+                >
                   {contact.first || contact.last ? (
                     <>
                       {contact.first} {contact.last}
