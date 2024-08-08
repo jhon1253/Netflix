@@ -2,21 +2,19 @@ import React, { useState } from "react";
 import "./Header.css";
 import Img from "../../assets/mmmppp.png";
 import { Link } from "react-scroll";
-import Cart from "../Cart/Cart";
 
-function Header({ productsInCart }) {
-  const [activo, setactivo] = useState(false);
-
+function Header() {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
+
   const toggleFormulario = () => {
     setMostrarFormulario(!mostrarFormulario);
   };
 
   return (
-    <div className="contenido ">
+    <div className="contenido">
       <header className="header">
         <div className="container">
-          <img className="hover:animate-bounce" src={Img} />
+          <img className="hover:animate-bounce" src={Img} alt="Logo" />
           <nav>
             <Link to="electronics" smooth={true} duration={200}>
               Electronics
@@ -25,16 +23,11 @@ function Header({ productsInCart }) {
               Jewelery
             </Link>
             <Link to="mensclothing" smooth={true} duration={200}>
-              Men\'s Clothing
+              Men's Clothing
             </Link>
             <Link to="womensclothing" smooth={true} duration={200}>
-              Women\'s Clothing
+              Women's Clothing
             </Link>
-            {activo && (
-              <div className="">
-                <h1 className="m-10">hola</h1>
-              </div>
-            )}
           </nav>
 
           {mostrarFormulario && (
@@ -57,17 +50,15 @@ function Header({ productsInCart }) {
         </div>
         <button
           className="btn-ini-sesion"
-          type="submit"
+          type="button"
           onClick={toggleFormulario}
         >
-          {" "}
           Login
         </button>
 
         <button className="" id="menu-btn-Hamburguesa">
           &#9776;
         </button>
-        <Cart productsInCart={productsInCart} />
       </header>
     </div>
   );
