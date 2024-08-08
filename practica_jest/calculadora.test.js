@@ -1,8 +1,8 @@
 // calculadora.test.js
 const { sumar, restar, multiplicar, dividir } = require('./calculadora');
 
-test('suma 2 + 2 para igual 4', () => {
-  expect(sumar(2, 2)).toBe(4);
+test('suma 4 + 4 para igual 8', () => {
+  expect(sumar(4, 4)).toBe(8);
 });
 
 test('resta 5 - 3 para igual 2', () => {
