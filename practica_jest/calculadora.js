@@ -13,7 +13,8 @@ function multiplicar(a, b) {
 
 function dividir(a, b) {
   if (b === 0) {
-    throw new Error('No se puede dividir por cero');
+    throw new Error("No se puede dividir por cero");
+    // console.error("error no se puede dividir por '")
   }
   return a / b;
 }
