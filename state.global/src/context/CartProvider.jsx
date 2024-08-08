@@ -18,9 +18,18 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  const removeFromCart = (product) => {
-    setCart(cart.filter((item) => item.id !== product.id));
-  };
+ const removeFromCart = (product) => {
+   setCart((prevState) => {
+     const updatedCart = prevState.map((item) =>
+         item.id === product.id
+           ? { ...item, quantity: item.quantity - 1 }
+           : item
+       )
+       .filter((item) => item.quantity > 0); // Filtra los productos con cantidad 0
+
+     return updatedCart;
+   });
+ };
 
   const clearCart = () => {
     setCart([]);
