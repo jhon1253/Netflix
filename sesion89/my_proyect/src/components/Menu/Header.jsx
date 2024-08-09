@@ -17,16 +17,16 @@ function Header() {
           <img className="hover:animate-bounce" src={Img} alt="Logo" />
           <nav>
             <Link to="electronics" smooth={true} duration={200}>
-              Electronics
+              ELECTRONICS
             </Link>
             <Link to="jewelery" smooth={true} duration={200}>
-              Jewelery
+              JEWELERY
             </Link>
             <Link to="mensclothing" smooth={true} duration={200}>
-              Men's Clothing
+              MEN'S CLOTHING
             </Link>
             <Link to="womensclothing" smooth={true} duration={200}>
-              Women's Clothing
+              WOMEN'S CLOTHING
             </Link>
           </nav>
 
