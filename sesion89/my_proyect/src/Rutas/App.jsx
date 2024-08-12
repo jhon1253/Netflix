@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Product from "../components/Product";
 import { useFetch } from "../Hooks/useGetProducts";
 import Header from "../components/Menu/Header";
+import CartIcon from "../components/CartIcons/CartIcon";
 
 export default function App() {
   const { data: electronics } = useFetch(
@@ -27,6 +28,7 @@ export default function App() {
   return (
     <>
       <Header />
+
       <div className="search flex justify-center">
         <h1 className="text-white">SHOPPING</h1>
       </div>

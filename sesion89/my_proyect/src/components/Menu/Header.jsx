@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import Img from "../../assets/mmmppp.png";
 import { Link } from "react-scroll";
+import CartIcon from "../CartIcons/CartIcon";
 
 function Header() {
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
@@ -48,17 +49,22 @@ function Header() {
             </div>
           )}
         </div>
-        <button
-          className="btn-ini-sesion"
-          type="button"
-          onClick={toggleFormulario}
-        >
-          Login
-        </button>
+        <div className="flex flex-row">
+          <button
+            className="btn-ini-sesion"
+            type="button"
+            onClick={toggleFormulario}
+          >
+            Login
+          </button>
+          <div className="border border-red-500 p-4 ">
+            <CartIcon />
+          </div>
 
-        <button className="" id="menu-btn-Hamburguesa">
-          &#9776;
-        </button>
+          <button className="" id="menu-btn-Hamburguesa">
+            &#9776;
+          </button>
+        </div>
       </header>
     </div>
   );
