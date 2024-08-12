@@ -21,7 +21,7 @@ export default function App() {
   );
 
   useEffect(() => {
-    // Empty effect
+
   }, [electronics, jewelery, mensclothing, womensclothing]);
 
   return (
