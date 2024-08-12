@@ -12,7 +12,7 @@ const CartIcon = () => {
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
       <i
-        className="bi bi-cart"
+        class="bi bi-cart4"
         style={{ fontSize: "24px", cursor: "pointer" }}
         onClick={() => setShowCart(!showCart)}
       ></i>
