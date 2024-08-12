@@ -1,18 +1,15 @@
-import { useState } from 'react'
-import ProductsList from './Components/ProductsList';
-import Cart from './Components/Cart';
-
+import React from 'react';
+import ProductList from './Components/ProductsList'
+import CartIcon from './Components/CartIcons/CartIcon'; // Asegúrate de que la ruta sea correcta
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-    <Cart/>
+    <div>
+      <CartIcon /> {/* Agrega el ícono del carrito */}
       <div>app</div>
-      <ProductsList />
-    </>
+      <ProductList />
+    </div>
   );
 }
 
-export default App
+export default App;
