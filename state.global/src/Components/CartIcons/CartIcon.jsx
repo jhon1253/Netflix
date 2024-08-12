@@ -7,7 +7,7 @@ const CartIcon = () => {
   const [showCart, setShowCart] = useState(false);
 
   // Contar la cantidad total de productos en el carrito
-  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+  const totalItems = cart?.reduce((total, item) => total + item.quantity, 0);
 
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
@@ -17,6 +17,7 @@ const CartIcon = () => {
         onClick={() => setShowCart(!showCart)}
       ></i>
       {totalItems > 0 && (
+        //css
         <span
           style={{
             position: "absolute",
