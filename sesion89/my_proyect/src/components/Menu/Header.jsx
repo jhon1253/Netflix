@@ -57,7 +57,7 @@ function Header() {
           >
             Login
           </button>
-          <div className="border border-red-500 p-4 ">
+          <div className="border text-lg border-red-500 p-3 my-4 mx-20 ">
             <CartIcon />
           </div>
 

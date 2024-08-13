@@ -13,12 +13,12 @@ const CartIcon = () => {
   return (
     <div className="relative inline-block">
       <i
-        className="bi bi-cart4 text-white text-xl cursor-pointer"
+        className="bi bi-cart4 text-white text-xl  cursor-pointer"
         onClick={() => setShowCart(!showCart)}
       ></i>
 
       {totalItems > 0 && (
-        <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full px-2 text-sm font-bold">
+        <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full  text-sm font-bold">
           {totalItems}
         </span>
       )}
