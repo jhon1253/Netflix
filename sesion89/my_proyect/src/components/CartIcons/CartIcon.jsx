@@ -13,7 +13,7 @@ const CartIcon = () => {
   return (
     <div className="relative inline-block">
       <i
-        className="bi bi-cart4 text-white text-xl  cursor-pointer"
+        className="bi bi-cart4  text-white text-3xl bg-red-600 cursor-pointer"
         onClick={() => setShowCart(!showCart)}
       ></i>
 
