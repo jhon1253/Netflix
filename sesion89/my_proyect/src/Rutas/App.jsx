@@ -3,6 +3,7 @@ import Product from "../components/Product";
 import { useFetch } from "../Hooks/useGetProducts";
 import Header from "../components/Menu/Header";
 import CartIcon from "../components/CartIcons/CartIcon";
+import "../App.css"
 
 export default function App() {
   const { data: electronics } = useFetch(
@@ -21,19 +22,17 @@ export default function App() {
     "https://fakestoreapi.com/products/category/women's%20clothing"
   );
 
-  useEffect(() => {
-
-  }, [electronics, jewelery, mensclothing, womensclothing]);
+  useEffect(() => {}, [electronics, jewelery, mensclothing, womensclothing]);
 
   return (
     <>
       <Header />
 
-      <div className="search flex justify-center">
-        <h1 className="text-white">SHOPPING</h1>
+      <div className="search">
+        <h1 className="title">SHOPPING</h1>
       </div>
-      <div className="titulos" name="electronics">
-        <h1 className="text-3xl text-white">Electronics</h1>
+      <div className="section" name="electronics">
+        <h1 className="heading">Electronics</h1>
         <div className="product-container">
           {electronics &&
             electronics.map((product, index) => (
@@ -41,25 +40,25 @@ export default function App() {
             ))}
         </div>
       </div>
-      <div className="titulos1" name="jewelery">
-        <h1 className="text-3xl text-white">Jewelery</h1>
-        <div className="imagenes1">
+      <div className="section" name="jewelery">
+        <h1 className="heading">Jewelery</h1>
+        <div className="product-container">
           {jewelery.map((product, index) => (
             <Product key={index} {...product} />
           ))}
         </div>
       </div>
-      <div className="titulos2" name="mensclothing">
-        <h1 className="text-3xl text-white">Men's Clothing</h1>
-        <div className="imagenes2">
+      <div className="section" name="mensclothing">
+        <h1 className="heading">Men's Clothing</h1>
+        <div className="product-container">
           {mensclothing.map((product, index) => (
             <Product key={index} {...product} />
           ))}
         </div>
       </div>
-      <div className="titulos3" name="womensclothing">
-        <h1 className="text-3xl text-white">Women's Clothing</h1>
-        <div className="imagenes3">
+      <div className="section" name="womensclothing">
+        <h1 className="heading">Women's Clothing</h1>
+        <div className="product-container">
           {womensclothing.map((product, index) => (
             <Product key={index} {...product} />
           ))}
