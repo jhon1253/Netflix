@@ -6,10 +6,10 @@ const Cart = () => {
   const { cart, removeFromCart, clearCart } = useContext(CartContext);
 
   return (
-    <div>
-      <h2>Cart</h2>
+    <div className="bg-red-600">
+      <h2 className="text-center m-4">LIST PRODUCTS</h2>
       {cart.length === 0 ? (
-        <p>Products agg</p>
+        <p className="text-center">PRODUCT BASKET</p>
       ) : (
         <div>
           {cart.map((product, idx) => (
