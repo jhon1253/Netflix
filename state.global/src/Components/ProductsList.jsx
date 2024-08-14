@@ -19,7 +19,7 @@ const ProductList = () => {
             <p>{product.description}</p>
             <p>{product.price}</p>
             <button onClick={() => addToCart(product)}>
-              Agregar al carrito
+              comprar
             </button>
           </div>
         );
